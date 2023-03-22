@@ -20,6 +20,8 @@ builder.Services.AddDbContextFactory<DataContext>(
 builder.Services.AddScoped<IJobCategoryRepository, JobCategoryRepository>();
 builder.Services.AddScoped<IJobCategoryService, JobCategoryService>();
 
+builder.Services.AddScoped<iJobRepositort, jobRepository>();
+
 
 var app = builder.Build();
 
